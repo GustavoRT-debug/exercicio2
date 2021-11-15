@@ -1,11 +1,8 @@
-from mininet.topo import Topo
-from mininet.top import SingleSwitchTopo
-from mininet.net import Mininet
-from mininet.cli import CLI
-from mininet.node import *
+from mininet.node import Topo
 class myTopo( Topo ):
     def __init__(self):
-        Topo.__init__(self):
+        
+        Topo.__init__(self)
         # Add hosts and switches
         h1 = self.addHost('h1')
         h2 = self.addHost('h2')
@@ -16,7 +13,6 @@ class myTopo( Topo ):
         s1 = self.addSwitch('s1')
         s2 = self.addSwitch('s2')
         s3 = self.addSwitch('s3')
-
 
         # Add links
         self.addLink( h1, s1)
@@ -29,4 +25,5 @@ class myTopo( Topo ):
         self.addLink( s2, s3)
        
 
-topos = {'exercicio2': (lambda : myTopo())}
+topos = {'exercicio2': (lambda : Exercicio2())}
+
