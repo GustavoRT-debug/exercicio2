@@ -31,6 +31,5 @@ class MyTopo( Topo ):
         self.addLink( s2, s3)
        
 
-topos = {'mytopo': (lambda : MyTopo())}
 
 topos = { 'mytopo': ( lambda: MyTopo() ) }
