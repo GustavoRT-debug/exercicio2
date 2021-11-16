@@ -1,5 +1,5 @@
 from mininet.node import Topo
-class myTopo( Topo ):
+class MyTopo( Topo ):
     def __init__(self):
         
         Topo.__init__(self)
@@ -25,5 +25,5 @@ class myTopo( Topo ):
         self.addLink( s2, s3)
        
 
-topos = {'exercicio2': (lambda : Exercicio2())}
+topos = {'mytopo': (lambda : MyTopo())}
 
